@@ -1,0 +1,60 @@
+  
+.thumb-box{
+	padding:0;
+	border: 2px solid #fff;
+	border-bottom:none;
+	background-color: #e70631;
+	&:last-child{
+		border-left:1px solid #fff;
+	}
+	&:first-child{
+		border-right:1px solid #fff;
+	}
+	.thumbnail{
+		padding:0;
+		margin:0;
+		overflow:hidden;
+		cursor: pointer;
+		position: relative;
+		.img-title{
+			position: absolute;
+			bottom: 0;
+			color: #fff;
+			font-size: 25px;
+			left: 15px;
+			text-align: left;
+			opacity: 0;
+			transform: translateX(40px);
+		}
+		&.left-side{
+			border-right: none;
+			border-bottom: none;
+		}
+		img{
+			width: 380px;
+			height: 284px;
+			overflow: hidden;
+			 transform: scale(1.1);
+			transition: opacity 0.35s, transform 0.35s;
+		}
+		&:hover{
+			img{
+				 transform: scale(1.3);
+				 opacity: 0.26;
+			}
+			.img-title{
+				opacity: 1;
+				transform: translateX(0);
+				transition: opacity 0.15s 0.15s ease-in,transform 0.15s 0.15s;
+			}
+		}
+	}
+}
+
+  .portfolio-thumbs{
+	@include desktopS{
+		width: 85%;
+		margin: 0 auto;
+		max-width: 380px;
+	}
+ } 

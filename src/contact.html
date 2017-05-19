@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>		
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<meta charset="utf-8">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+	</head>
+	<body>
+		<div class="container">		 
+			<div class="row">
+				<nav>
+					<div class="logo-box">
+						<img src=<%=require("./img/logo-mini.png") %> alt="logo">
+
+					</div>
+					<ul class="menu-box">
+						<li>
+							<a href="./index.html#n">O MNIE</a>
+						</li>
+						<li>
+							<a href="./portfolio.html">PORTFOLIO</a>
+						</li>
+						<li class="active">
+							<a href="#">KONTAKT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>		 
+		</div>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="red-line"></div>
+				 <h2>Kontakt</h2>
+				<div class="red-line"></div>
+			</div>
+		</header>
+		<main class="contant-main">
+			<section class="contact-info">
+				<div class="phone">
+					<img src=<%=require("./img/phone.png") %> alt="phone">
+					<span>+48 791 050 595</span>
+				</div>
+				<p class="t-center">Masz do mnie jakieś pytania? Chcesz dowiedzieć się jeszcze więcej?<br>Śmiało pisz lub dzwoń, chętnie udzielę więcej informacji.
+				</p>
+				<form class="main-form">
+					<div class="form-content">
+						<div class="input-block">
+							<div class="input-group big-input a">
+								<input type="text" class="form-item name-input"></input>
+								<label>TWOJE IMIE <span class="red">*</span></label>
+								<div class="input-error">wymagane</div>
+							</div>
+						</div>
+						<div class="input-block flex-block b">
+							<div class="input-group small-input">
+								<input type="text" class="form-item email-input"></input>
+								<label>EMAIL <span class="red">*</span></label>
+								<div class="input-error">wymagane</div>
+							</div>
+
+							<div class="input-group small-input c">
+								<input type="text" class="small-input form-item phone-input"></input>
+								<label>NR TELEFONU</label>
+								<div class="input-error">wpisz poprawnie nr telefonu</div>
+							</div>
+						</div>
+						<div class="input-block">
+							<div class="input-group big-input message-input d">
+								<textarea id="text" class="area form-item" rows='1'></textarea>
+								<label>WIADOMOŚĆ <span class="red">*</span></label>
+								<div class="input-error">wymagane</div>
+							</div>
+						</div>
+						<button class="button">WYŚLIJ</button>
+					</div>
+					<div class="thanks-after">Wiadomość została wysłana. Postaram się jak najszybciej na nią odpowiedzieć.</div>
+				</form>
+			</section>
+
+		</main>
+		<footer>
+			<div class="social-media-box">
+				<a href="#"><img src=<%=require("./img/behence.png") %> alt="behence"></a>
+				<a href="#"><img src=<%=require("./img/linkedin.png") %> alt="linkedin"></a>
+			</div>
+			<div class="copy">
+				<p>© 2017 GRZEGORZ BARWIŃSKI ALL RIGHTS RESERVED</p>
+			</div>
+		</footer>
+	</body>
+</html>

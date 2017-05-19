@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+	<head>		
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<meta charset="utf-8">
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+	</head>
+	<body>
+<section id="loader_wrapper"  >
+    <div class="loader-section section-left">
+        <img class="logo-img" src=<%=require("./img/b2w12.svg") %>>
+    </div>
+    <div class="loader-section section-right">
+        <img class="logo-img" src=<%=require("./img/g22w1.svg") %>>
+        <div class="rotate-content">
+            <h1><span class="name-font">Grzegorz <b>Barwiński</b></span><br><span class="graph-font">Graphic Designer</span></h1>
+            <div class="spinner-wrap">
+                <div class="spinner-text">Kliknij</div>
+                <div class="spinner">
+                      <div class="double-bounce1"></div>
+                      <div class="double-bounce2"></div>        
+                </div>       
+            </div>       
+        </div>
+    </div>
+</section>
+		<div class="container">		 
+			<div class="row">
+				<nav>
+					<div class="logo-box">
+						<img src=<%=require("./img/logo-mini.png") %> alt="logo">
+					</div>
+					<ul class="menu-box">
+						<li class="active">
+							<a href="#">O MNIE</a>
+						</li>
+						<li>
+							<a href="./portfolio.html">PORTFOLIO</a>
+						</li>
+						<li>
+							<a href="./contact.html">KONTAKT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>		 
+		</div>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="red-line"></div>
+				 <h2>O mnie</h2>
+				<div class="red-line"></div>
+			</div>
+		</header>
+		<main>
+			<section class="presentation">
+				<div class="container">		 
+					<div class="row">
+						<div class="name">
+							<h1>Grzegorz <b>Barwiński</b></h1>
+							<h2 class="purple margin-b">Graphic Designer</h2>				
+						</div>
+					</div>  
+				</div>
+			</section>
+			<section class="description">
+				<div class="container">		 
+					<div class="row">
+						<div  class=" col-xs-12 col-md-2"></div>
+						<div  class="  col-xs-12 col-md-8">
+							<div class="row">
+								<div  class=" face-box col-xs-12 col-md-5">
+									<img class="i-block" src=<%=require("./img/face.png") %> alt="face">						 
+								</div>
+								<div  class=" descr-box col-xs-12 col-md-7">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sUt facere consectetur autem neque debitis, aliquid est, lmasqxime optio, porro odit reiciendis obcaecati iure voluptatum dolorum. Itaque esse necessitatibus, porro in.loremLorem ipsum dolor sit amet, consectetur adipisicing elit. Nisis totam dolore maiores commodi aut, quia illo rem voluptatem soluta dolor impedit eaque distinctio saeperempLorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi totam dolore maiores commodi aut, quia illo rem voluptatem soluta dolor impedit eaque distinctio saepe</p>
+								</div>
+							</div>
+						</div>
+						<div  class="col-xs-12 col-md-2"></div>
+					</div>	 
+				</div>
+			</section>
+			<section class="interaction">
+				<div class="container">
+					<div  class=" col-xs-12 col-md-2"></div>
+						<div  class="  col-xs-12 col-md-8">
+							<div class="row">
+								<div  class="t-center col-xs-12 col-sm-6">
+									<div class="button-wrap">
+										<span class="call-text">Zobacz moje prace!</span>
+										<a href="./portfolio.html" class="button">PORTFOLIO</a>
+									</div>
+								</div>
+								<div  class="t-center col-xs-12 col-sm-6">
+									<div class="button-wrap">
+										<span class="call-text">Napisz do mnie! </span>
+										<a href="./contact.html" class="button">KONTAKT</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					<div  class="col-xs-12 col-md-2"></div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="social-media-box">
+				<a href="#"><img src=<%=require("./img/behence.png") %> alt="behence"></a>
+				<a href="#"><img src=<%=require("./img/linkedin.png") %> alt="linkedin"></a>
+			</div>
+			<div class="copy">
+				<p>© 2017 GRZEGORZ BARWIŃSKI ALL RIGHTS RESERVED</p>
+			</div>
+		</footer>
+	</body>
+</html>
