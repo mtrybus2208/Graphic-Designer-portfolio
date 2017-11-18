@@ -1,6 +1,6 @@
 # Graphic-Designer-portfolio ![favicon](https://images81.fotosik.pl/907/31718c6f16f49b86gen.png)
 
-## Portfolio page created for Graphic Designer.
+Portfolio page created for Graphic Designer.
 
 ## List of technologies used in project: 
 * Webpack
