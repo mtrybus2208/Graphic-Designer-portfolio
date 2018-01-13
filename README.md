@@ -1,4 +1,4 @@
-# Graphic-Designer-portfolio ![favicon](https://images81.fotosik.pl/907/31718c6f16f49b86gen.png)
+# Graphic-Designer-portfolio 
 
 Portfolio page created for Graphic Designer.
 
@@ -10,6 +10,5 @@ Portfolio page created for Graphic Designer.
 
 <strong>Preview:</strong> <a href="http://gbarwinski.pl/">gbarwinski.pl</a>
 
-<img src="https://images84.fotosik.pl/907/21a686b732adef51.jpg">
 
 
